@@ -2,15 +2,20 @@ Template.hello.onCreated(function helloOnCreated() {
 
   const query = Projects.createQuery({
     name: 1, // project name
+
     owner: {
       name: 1, // member name
       group: {
         name: 1, // group name
       },
     },
+
     members: {
       name: 1, // member name
       gender: 1, // member gender
+      group: {
+        name: 1,
+      },
     },
   })
 
