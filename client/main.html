@@ -12,7 +12,8 @@
   {{#each projects}}
     <div style='border-bottom: 1px solid #efefef;'>
       <h3>project name: <small>{{name}}</small></h3>
-      <h3>owne name: <small>{{owner.name}}</small></h3>
+      <h3>owner name: <small>{{owner.name}}</small></h3>
+      <h3>owner group name: <small>{{owner.group.name}}</small></h3>
       <h3>has members</h3>
       <ul>
         {{#each members}}
