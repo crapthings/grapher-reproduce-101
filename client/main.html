@@ -1,0 +1,24 @@
+<head>
+  <title>grapher-test</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  {{#each projects}}
+    <div style='border-bottom: 1px solid #efefef;'>
+      <h3>project name: <small>{{name}}</small></h3>
+      <h3>owne name: <small>{{owner.name}}</small></h3>
+      <h3>has members</h3>
+      <ul>
+        {{#each members}}
+          <li>{{name}}: {{gender}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/each}}
+</template>
